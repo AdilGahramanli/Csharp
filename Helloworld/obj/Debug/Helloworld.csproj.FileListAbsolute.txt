@@ -5,3 +5,10 @@ C:\Users\adil.gahramanli\source\repos\Helloworld\obj\Debug\Helloworld.csproj.Ass
 C:\Users\adil.gahramanli\source\repos\Helloworld\obj\Debug\Helloworld.csproj.CoreCompileInputs.cache
 C:\Users\adil.gahramanli\source\repos\Helloworld\obj\Debug\Helloworld.exe
 C:\Users\adil.gahramanli\source\repos\Helloworld\obj\Debug\Helloworld.pdb
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\bin\Debug\Helloworld.exe.config
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\bin\Debug\Helloworld.exe
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\bin\Debug\Helloworld.pdb
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\obj\Debug\Helloworld.csproj.AssemblyReference.cache
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\obj\Debug\Helloworld.csproj.CoreCompileInputs.cache
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\obj\Debug\Helloworld.exe
+C:\Users\adil.gahramanli\Source\Repos\Csharp\Helloworld\obj\Debug\Helloworld.pdb
