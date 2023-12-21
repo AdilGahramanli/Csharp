@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace Helloworld
 {
-    internal class Program
+    public class Program
     {
 
         static void Main(string[] args)
@@ -35,7 +35,21 @@ namespace Helloworld
 
             messager.dateMessager();
 
+            Console.WriteLine("Partie 1.2 Ajout d'une classe");
+            Message message = new Message();
+            for (int i = 0; i < messager.intervalDays.Length; i++)
+            {
+                if (dateDayName == messager.intervalDays[i])
+                {
+
+                    message.ToString();
+
+
+                }
+            }
+
            
+
 
             Console.ReadLine();
 

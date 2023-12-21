@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FakeTime.cs" />
+    <Compile Include="Time.cs" />
+    <Compile Include="ITime.cs" />
+    <Compile Include="TestMessage.cs" />
+    <Compile Include="Properties\Message.cs" />
     <Compile Include="Messager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

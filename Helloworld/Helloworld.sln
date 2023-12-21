@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helloworld", "Helloworld.csproj", "{E09EC2D3-A39D-47B1-8E38-D3BD4DC5C3B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E7D6FB3-C01C-4F66-9297-3A7C03F9959A}"
+	ProjectSection(SolutionItems) = preProject
+		TestMessage.cs = TestMessage.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Helloworld
 {
-    public class Message
+    interface ITime
     {
+        
+        DateTime time();
     }
 }

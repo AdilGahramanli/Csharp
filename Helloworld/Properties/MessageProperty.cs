@@ -8,5 +8,13 @@ namespace Helloworld
 {
     public class Message
     {
+        private DateTime daytime = Time.
+        private string message1 = "message 1";
+
+        public Message()
+        {
+
+        }  
+
     }
 }
