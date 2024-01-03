@@ -1,29 +1,36 @@
 ﻿
 using System.Net;
 using System.Reflection.PortableExecutable;
+using System.Security.AccessControl;
+using System.Security.Principal;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
+
+
 
 
 
 
 // See https://aka.ms/new-console-template for more information
 using OpenDataProject;
-ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 |
-SecurityProtocolType.Tls;
+
 Console.WriteLine("Hello, World!");
 
-OpenDataRequest requestApi = new OpenDataRequest();
+MetroApi requestApi = new MetroApi();
 
-Console.WriteLine(requestApi.affichageUrl());
+List<LineData> serverResponse = requestApi.jsonFormatServerResponse();
 
-Console.WriteLine(requestApi.requestUrl());
-Stream dataStream = requestApi.requestUrl().GetResponseStream();
-StreamReader reader = new StreamReader(dataStream);
-string responseFromServer = reader.ReadToEnd();
-Console.WriteLine(responseFromServer);
-reader.Close();
-dataStream.Close();
+foreach (LineData lineData in requestApi.jsonFormatServerResponse())
+{
+    Console.WriteLine("id : " + lineData.id);
+    Console.WriteLine("name : " + lineData.name);
+    Console.WriteLine("lon : " + lineData.lon);
+    Console.WriteLine("lat : " + lineData.lat);
+    Console.WriteLine("zone : " + lineData.zone);
+    foreach(string txt in lineData.lines){ Console.WriteLine(txt); }
+}
 
 
-
+//Console.WriteLine(requestApi.lineDataObjectList(serverResponse));
 
 

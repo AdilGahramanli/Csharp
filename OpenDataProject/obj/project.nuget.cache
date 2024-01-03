@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SYWscCeTd/pOhuSbWKQEUfZWW2yKC71MUtg4bHJ5NJOjMrk7KvPxuDF5iwu15YmdI191cq9Wzut7QlacyxzjRA==",
+  "dgSpecHash": "uw2Cl662dr1Egh3q49xYcSg6q+XBkRCwEYS6YF9meyo9SapCAPMT8b633tsy7PPJ8ahhH6d/sX3WNHnvUx6Wgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\adil.gahramanli\\source\\repos\\Csharp\\OpenDataProject\\OpenDataProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\adil.gahramanli\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
