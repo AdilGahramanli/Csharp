@@ -26,31 +26,22 @@ namespace OpenDataProject
         public static  double Y = 45.18430860448526;
         public string url = String.Format(CultureInfo.InvariantCulture, "https://data.mobilites-m.fr/api/linesNear/json?x={0}&y={1}&dist=400&details=true", X, Y);
         LineData lineData = new LineData();
+        private IRequest _request;
+        public MetroApi() {
+            _request = new Request();
+        }
 
-
-       /* LineData myDeserializedClass = JsonConvert.DeserializeObject<List<LineData>>(myJsonResponse);*/
-
-        /*public List<LineData> lineDataObjectList (string responseServer)
+        public MetroApi(IRequest request)
         {
-            List<LineData> lineDatas = new List<LineData>();
-            lineDatas.Add(deserializeJsonData(responseServer));
-            return lineDatas;
-        }*/
-
-
-        //public List<LineData> deserializeJsonData (string responseFromServer)
-        //{
-            
-
-        //    List<LineData> deserializedLineData = JsonConvert.DeserializeObject<List<LineData>>(responseFromServer);
-        //    return deserializedLineData;
-        //}
+            _request = request;
+        }
+       
 
         public List<LineData> jsonFormatServerResponse()
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 |
             SecurityProtocolType.Tls;
-            WebResponse webResponse = requestUrl();
+            WebResponse webResponse = _request.requestUrl();
             Stream dataStream = webResponse.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
             String responseFromServer = reader.ReadToEnd();
