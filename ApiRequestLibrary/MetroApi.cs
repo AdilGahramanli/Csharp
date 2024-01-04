@@ -11,6 +11,8 @@ using System.Net.WebSockets;
 using System.Globalization;
 using System.Security.Principal;
 using Newtonsoft.Json;
+using System.Resources;
+using ApiRequestLibrary;
 
 
 
@@ -18,16 +20,17 @@ using Newtonsoft.Json;
 
 namespace OpenDataProject
 {
-    
+
     public class MetroApi
     {
-        
+
         public static double X = 5.731199161564558;
-        public static  double Y = 45.18430860448526;
+        public static double Y = 45.18430860448526;
         public string url = String.Format(CultureInfo.InvariantCulture, "https://data.mobilites-m.fr/api/linesNear/json?x={0}&y={1}&dist=400&details=true", X, Y);
-        LineData lineData = new LineData();
+
         private IRequest _request;
-        public MetroApi() {
+        public MetroApi()
+        {
             _request = new Request();
         }
 
@@ -35,38 +38,20 @@ namespace OpenDataProject
         {
             _request = request;
         }
-       
+
+
 
         public List<LineData> jsonFormatServerResponse()
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 |
             SecurityProtocolType.Tls;
-            WebResponse webResponse = _request.requestUrl();
-            Stream dataStream = webResponse.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            String responseFromServer = reader.ReadToEnd();
+            string webResponse = _request.requestUrl(url);
 
-            List<LineData> deserializedLineData = JsonConvert.DeserializeObject<List<LineData>>(responseFromServer);
+
+            List<LineData> deserializedLineData = JsonConvert.DeserializeObject<List<LineData>>(webResponse);
 
             return deserializedLineData;
         }
-
-        public WebResponse requestUrl()
-        {
-            WebRequest request = WebRequest.Create(url);
-
-            /*Console.WriteLine("\nThe Timeout time of the request before setting is : {0} milliseconds", request.Timeout);*/
-            request.Method = "GET";
-            WebResponse response = request.GetResponse();
-
-            return response;
-
-        }
-
-        //public string affichageUrl()
-        //{
-        //    return url;
-        //}
 
 
 

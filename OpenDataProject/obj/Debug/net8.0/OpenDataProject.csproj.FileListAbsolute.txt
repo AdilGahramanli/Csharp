@@ -30,3 +30,6 @@ C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\obj\Debug\net8.0\re
 C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\obj\Debug\net8.0\OpenDataProject.csproj.AssemblyReference.cache
 C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\obj\Debug\net8.0\OpenDataProject.csproj.CopyComplete
+C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\bin\Debug\net8.0\Newtonsoft.Json.Schema.dll
+C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\bin\Debug\net8.0\ApiRequestLibrary.dll
+C:\Users\adil.gahramanli\source\repos\Csharp\OpenDataProject\bin\Debug\net8.0\ApiRequestLibrary.pdb

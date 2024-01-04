@@ -1,0 +1,13 @@
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\bin\Debug\net8.0\ApiRequestLibrary.deps.json
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\bin\Debug\net8.0\ApiRequestLibrary.dll
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\bin\Debug\net8.0\ApiRequestLibrary.pdb
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.AssemblyInfoInputs.cache
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.AssemblyInfo.cs
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.sourcelink.json
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.dll
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\refint\ApiRequestLibrary.dll
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.pdb
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ref\ApiRequestLibrary.dll
+C:\Users\adil.gahramanli\source\repos\Csharp\ApiRequestLibrary\obj\Debug\net8.0\ApiRequestLibrary.csproj.AssemblyReference.cache

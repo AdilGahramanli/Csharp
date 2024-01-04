@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenDataProject", "OpenDataProject.csproj", "{78D2B1B5-CC80-4162-8B4E-AE7C50CC4650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApi", "..\TestApi\TestApi.csproj", "{72746948-3AA5-4C77-BC09-07CC02822460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApi", "..\TestApi\TestApi.csproj", "{72746948-3AA5-4C77-BC09-07CC02822460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRequestLibrary", "..\ApiRequestLibrary\ApiRequestLibrary.csproj", "{3F490D91-DF78-404C-8A14-87F6945F99EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{72746948-3AA5-4C77-BC09-07CC02822460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72746948-3AA5-4C77-BC09-07CC02822460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72746948-3AA5-4C77-BC09-07CC02822460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F490D91-DF78-404C-8A14-87F6945F99EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F490D91-DF78-404C-8A14-87F6945F99EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F490D91-DF78-404C-8A14-87F6945F99EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F490D91-DF78-404C-8A14-87F6945F99EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

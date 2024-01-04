@@ -14,6 +14,36 @@
             "related": ".xml"
           }
         }
+      },
+      "Newtonsoft.Json.Schema/3.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Schema.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Schema.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ApiRequestLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Schema": "3.0.15"
+        },
+        "compile": {
+          "bin/placeholder/ApiRequestLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRequestLibrary.dll": {}
+        }
       }
     }
   },
@@ -47,10 +77,39 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Newtonsoft.Json.Schema/3.0.15": {
+      "sha512": "O/RBoXYm93pJy/JF3vRJxISALxup8CxKrBGXAyd/pFGrCa9hnSeHq/rQqkTnnpOcvtQwcEDfMZ+R5h871XEO5A==",
+      "type": "package",
+      "path": "newtonsoft.json.schema/3.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net35/Newtonsoft.Json.Schema.dll",
+        "lib/net35/Newtonsoft.Json.Schema.xml",
+        "lib/net40/Newtonsoft.Json.Schema.dll",
+        "lib/net40/Newtonsoft.Json.Schema.xml",
+        "lib/net45/Newtonsoft.Json.Schema.dll",
+        "lib/net45/Newtonsoft.Json.Schema.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Schema.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Schema.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Schema.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Schema.xml",
+        "newtonsoft.json.schema.3.0.15.nupkg.sha512",
+        "newtonsoft.json.schema.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "ApiRequestLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ApiRequestLibrary/ApiRequestLibrary.csproj",
+      "msbuildProject": "../ApiRequestLibrary/ApiRequestLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "ApiRequestLibrary >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -80,7 +139,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\adil.gahramanli\\source\\repos\\Csharp\\ApiRequestLibrary\\ApiRequestLibrary.csproj": {
+              "projectPath": "C:\\Users\\adil.gahramanli\\source\\repos\\Csharp\\ApiRequestLibrary\\ApiRequestLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

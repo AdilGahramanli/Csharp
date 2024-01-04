@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OpenDataProject
 {
-    internal interface IRequest
+    public interface IRequest
     {
         string requestUrl(string url);
     }

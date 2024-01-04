@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pWw1+q+OJ0e+q3ce6qbN0o8MHyJCwxwo68Xi3IGEoq4z8qsIe5h0JqSqKeDEqXNZ44+nD0nn1VWQ+2keWmLpRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adil.gahramanli\\source\\repos\\Csharp\\ApiRequestLibrary\\ApiRequestLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adil.gahramanli\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\adil.gahramanli\\.nuget\\packages\\newtonsoft.json.schema\\3.0.15\\newtonsoft.json.schema.3.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
