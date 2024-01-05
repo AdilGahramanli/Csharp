@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenDataProject
+namespace ApiRequestLibrary
 {
     public class Request:IRequest { 
     public string requestUrl(string url)

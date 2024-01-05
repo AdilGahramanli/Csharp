@@ -10,11 +10,6 @@ using ApiRequestLibrary;
 
 
 
-
-
-// See https://aka.ms/new-console-template for more information
-using OpenDataProject;
-
 Console.WriteLine("Hello, World!");
 
 MetroApi requestApi = new MetroApi();

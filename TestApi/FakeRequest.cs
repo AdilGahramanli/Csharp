@@ -9,9 +9,10 @@ using ApiRequestLibrary;
 
 
 
+
 namespace TestApi
 {
-    public class FakeRequest
+    public class FakeRequest : ApiRequestLibrary.IRequest
     {
 
         public string requestUrl(string url)

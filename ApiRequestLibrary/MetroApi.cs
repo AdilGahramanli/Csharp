@@ -18,7 +18,7 @@ using ApiRequestLibrary;
 
 
 
-namespace OpenDataProject
+namespace ApiRequestLibrary
 {
 
     public class MetroApi
