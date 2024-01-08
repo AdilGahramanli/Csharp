@@ -24,11 +24,17 @@ namespace ApiRequestLibrary
     public class MetroApi
     {
 
-        public static double X = 5.731199161564558;
-        public static double Y = 45.18430860448526;
-        public string url = String.Format(CultureInfo.InvariantCulture, "https://data.mobilites-m.fr/api/linesNear/json?x={0}&y={1}&dist=400&details=true", X, Y);
+        private static double lat = 5.731199161564558;
+        private static double lon = 45.18430860448526;
+        private static int distance = 400;
+        public string url = String.Format(CultureInfo.InvariantCulture, "https://data.mobilites-m.fr/api/linesNear/json?x={0}&y={1}&dist={2}&details=true", lat, lon, distance);
 
         private IRequest _request;
+
+        public double Lat { get => lat; set => lat = value; }
+        public double Lon { get => lon; set => lon = value; }
+        public  int Distance { get => distance; set => distance = value; }
+
         public MetroApi()
         {
             _request = new Request();
