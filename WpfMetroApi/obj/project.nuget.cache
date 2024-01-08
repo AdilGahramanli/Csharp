@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "g0vJ7MvxxoK5DClxz/Z6tdWPc37ztmDHW6v3xugDpleUbmsL4FHyYpzoP5VsrC4wAZ3RKzHRwI4nTxzW7IJf3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adil.gahramanli\\source\\repos\\Csharp\\WpfMetroApi\\WpfMetroApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adil.gahramanli\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\adil.gahramanli\\.nuget\\packages\\newtonsoft.json.schema\\3.0.15\\newtonsoft.json.schema.3.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
