@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenDataProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14343fd7650d0f341850bdda0ca0310d96821793")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e41fb547a284473202522ba3ea437003922dec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenDataProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenDataProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
