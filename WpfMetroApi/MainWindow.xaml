@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMetroApi"
         mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance Type=local:VM}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -18,16 +19,18 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="4" Text="{Binding FullName}" HorizontalAlignment="Center" FontWeight="Bold"/>
+        
 
-        <Label Grid.Column="0" Grid.Row="1" Margin="4" Content="Position lat:" HorizontalAlignment="Right"/>
+        <Label Grid.Column="0" Grid.Row="1" Margin="4" Content="Position Latitude : " HorizontalAlignment="Right"/>
         <!-- UpdateSourceTrigger=PropertyChanged makes sure that changes in the TextBoxes are immediately applied to the model. -->
-        <TextBox Grid.Column="1" Grid.Row="1" Margin="4" Text="{Binding PosLat, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
+        <TextBox Name="PosLatitude" Grid.Column="1" Grid.Row="1" Margin="4" Text="{Binding Latitude, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
 
-        <Label Grid.Column="0" Grid.Row="2" Margin="4" Content="Position Longitude:" HorizontalAlignment="Right"/>
-        <TextBox Grid.Column="1" Grid.Row="2" Margin="4" Text="{Binding PosLong, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"  Width="200"/>
+        <Label Grid.Column="0" Grid.Row="2" Margin="4" Content="Position Longitude : " HorizontalAlignment="Right"/>
+        <TextBox Name ="PosLongitude" Grid.Column="1" Grid.Row="2" Margin="4" Text="{Binding Longitude, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"  Width="200"/>
 
-        <Label Grid.Column="0" Grid.Row="3" Margin="4" Content="Distance:" HorizontalAlignment="Right"/>
-        <TextBlock Grid.Column="1" Grid.Row="3" Margin="4" Text="{Binding Distance}" HorizontalAlignment="Left"/>
+        <Label Grid.Column="0" Grid.Row="3" Margin="4" Content="Distance : " HorizontalAlignment="Right"/>
+        <TextBox Name ="PosDistance" Grid.Column="1" Grid.Row="3" Margin="4,4,0,4" Text="{Binding Distance, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
+
+        <Button Command="{Binding CommandStart}" Content="Start" />
     </Grid>
 </Window>

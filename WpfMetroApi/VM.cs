@@ -6,15 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
+
 
 namespace WpfMetroApi
 {
-    public class VM()
+    public class VM : INotifyPropertyChanged
     {
-        public MetroApi metro_api = new MetroApi();
         
+        public MetroApi metro_api = new MetroApi();
 
-        public double latitude {
+
+        public double Latitude
+        {
             get { return metro_api.Lat; }
             
             
@@ -23,7 +27,7 @@ namespace WpfMetroApi
                         } 
         }
 
-        public double longitude
+        public double Longitude
         {
             get { return metro_api.Lon; }
 
@@ -35,7 +39,7 @@ namespace WpfMetroApi
             }
         }
 
-        public double distance
+        public double Distance
         {
             get { return metro_api.Distance; }
 
@@ -47,7 +51,7 @@ namespace WpfMetroApi
             }
         }
 
-        public List<LineData> getApiDataString ()
+        public List<LineData> GetApiDataString ()
         {
             return metro_api.jsonFormatServerResponse();
         }
@@ -61,6 +65,30 @@ namespace WpfMetroApi
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        private ICommand _commandStart;
+        public ICommand CommandStart
+        {
+            get => _commandStart ?? (_commandStart = new RelayCommand(o =>
+            {
+
+               
+                OnPropertyChange("Information");
+            },
+    o => true));
+            set => _commandStart = value;
+
+        }
+
+        public void Start()
+        {
+            //Do what ever
+        }
+
+        public bool CanStart()
+        {
+            return (DateTime.Now.DayOfWeek == DayOfWeek.Monday); //Can only click that button on mondays.
         }
     }
 }

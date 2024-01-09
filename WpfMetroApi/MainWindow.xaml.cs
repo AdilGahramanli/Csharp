@@ -16,12 +16,16 @@ namespace WpfMetroApi
     /// </summary>
     public partial class MainWindow : Window
     {
-        private MainWindow _mainWindow;
+        private readonly VM _vm;
+
+    
         public MainWindow()
         {
             InitializeComponent();
-            _mainWindow = new MainWindow();
-            DataContext = _mainWindow;
+            _vm = new VM();
+            DataContext = _vm;
         }
+
+
     }
 }
