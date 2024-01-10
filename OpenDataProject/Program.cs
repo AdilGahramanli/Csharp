@@ -15,7 +15,7 @@ Console.WriteLine("Hello, World!");
 MetroApi requestApi = new MetroApi();
 
 
-foreach (LineData lineData in requestApi.jsonFormatServerResponse())
+foreach (LineData lineData in requestApi.GetLines())
 {
     Console.WriteLine("id : " + lineData.id);
     Console.WriteLine("name : " + lineData.name);

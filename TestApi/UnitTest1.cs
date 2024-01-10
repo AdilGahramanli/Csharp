@@ -27,8 +27,7 @@ namespace TestApi
             MetroApi target = new MetroApi(fake);
             if (Lat == 5.731199161564558 && Lon== 45.18430860448526 && Distance == 400) {
 
-                Assert.IsTrue(target.jsonFormatServerResponse == metro_api.jsonFormatServerResponse);
-                Assert.AreEqual(metro_api.jsonFormatServerResponse().Count, 12);
+                Assert.AreEqual(metro_api.GetLines().Count, 12);
             }
 
             

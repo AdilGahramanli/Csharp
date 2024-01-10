@@ -7,13 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using WpfMetroApi;
 
 
 namespace WpfMetroApi
 {
-    public class VM : INotifyPropertyChanged
+    public class VMPositionsGPS : INotifyPropertyChanged
     {
-        
+       
         public MetroApi metro_api = new MetroApi();
 
 
@@ -24,6 +25,8 @@ namespace WpfMetroApi
             
             set { if (metro_api.Lat != value)
                     metro_api.Lat = value;
+                OnPropertyChange("Lat");
+                OnPropertyChange("Information");
                         } 
         }
 
@@ -53,7 +56,7 @@ namespace WpfMetroApi
 
         public List<LineData> GetApiDataString ()
         {
-            return metro_api.jsonFormatServerResponse();
+            return metro_api.GetLines();
         }
 
 

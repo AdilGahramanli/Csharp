@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfMetroApi"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance Type=local:VM}"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="1095">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -19,7 +19,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        
 
         <Label Grid.Column="0" Grid.Row="1" Margin="4" Content="Position Latitude : " HorizontalAlignment="Right"/>
         <!-- UpdateSourceTrigger=PropertyChanged makes sure that changes in the TextBoxes are immediately applied to the model. -->
@@ -32,5 +31,27 @@
         <TextBox Name ="PosDistance" Grid.Column="1" Grid.Row="3" Margin="4,4,0,4" Text="{Binding Distance, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
 
         <Button Command="{Binding CommandStart}" Content="Start" />
+
+        <ListView Name="listBus" ItemsSource="{Binding Lines}" Grid.Row="0" Margin="64,338,58,81" RenderTransformOrigin="0.5,0.5" FontFamily="Times New Roman" >
+            <ListView.View >
+                <GridView >
+                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding name}" />
+                    <GridViewColumn Header="Id" Width="70" DisplayMemberBinding="{Binding id}" />
+                    <GridViewColumn Header="Longitude" Width="100" DisplayMemberBinding="{Binding lon}" />
+                    <GridViewColumn Header="Latitude" Width="100" DisplayMemberBinding="{Binding lat}" />
+                    <GridViewColumn Header="Zone" Width="100" DisplayMemberBinding="{Binding zone}" />
+
+                    <GridViewColumn Header="Lignes1" Width="100" DisplayMemberBinding="{Binding lines[0]}" />
+                    <GridViewColumn Header="Lignes2" Width="100" DisplayMemberBinding="{Binding lines[1]}" />
+                    <GridViewColumn Header="Lignes3" Width="100" DisplayMemberBinding="{Binding lines[2]}" />
+                    <GridViewColumn Header="Lignes4" Width="100" DisplayMemberBinding="{Binding lines[3]}" />
+                    <GridViewColumn Header="Lignes5" Width="100" DisplayMemberBinding="{Binding lines[4]}" />
+
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+
+
     </Grid>
 </Window>

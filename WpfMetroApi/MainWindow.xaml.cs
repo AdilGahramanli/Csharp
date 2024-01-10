@@ -16,13 +16,13 @@ namespace WpfMetroApi
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly VM _vm;
+        private readonly VMPositionsGPS _vm;
 
     
         public MainWindow()
         {
             InitializeComponent();
-            _vm = new VM();
+            _vm = new VMPositionsGPS();
             DataContext = _vm;
         }
 

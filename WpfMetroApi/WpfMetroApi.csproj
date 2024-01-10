@@ -12,4 +12,10 @@
     <ProjectReference Include="..\ApiRequestLibrary\ApiRequestLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Comands\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
 </Project>
